@@ -4,10 +4,3 @@ On Mac OS X (Yosemite):
 1. Download LaTex for Mac (http://tug.org/mactex/)
 
 2. Copy files from libs folder in “/usr/local/texlive/<year>/texmf-local”
-
-	
-
-
-StudentReportTemplate
-
-LaTex classes and document templates for typesetting reports in Russian.
