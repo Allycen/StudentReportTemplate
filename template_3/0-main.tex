@@ -1,0 +1,72 @@
+\documentclass[utf8x, 12pt]{G7-32} 
+\include{1-config}
+
+
+\begin{document}
+
+\frontmatter 
+\include{2-title}
+\thispagestyle{empty}
+\setcounter{page}{0}
+\tableofcontents
+\clearpage
+\mainmatter
+
+
+
+\chapter{Задание}
+
+\begin{itemize}
+	\item На языке Verilog описать представленную ниже схему
+	
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=7cm]{img/shema}
+	\end{center}
+	\vspace{-5mm}\caption{Схема устройства}
+\end{figure}	
+	
+	\item Посмотреть синтезированную пакетом QII схему (RTL Viewer)
+	\item Осуществить функциональное моделирование 
+	\item Назначить выводы СБИС
+	\item Осуществить полную компиляцию, программирование платы и проверить работу проекта на плате 
+\end{itemize}
+
+\chapter{Решение}
+
+Для определения логики работы файла создадим Verilog HDL файл. В результате получаем следующий код:
+
+\begin{figure}[hhh!]
+	\begin{center}
+		\includegraphics[width=12cm]{img/vhdl}
+	\end{center}
+	\vspace{-5mm}\caption{VHDL код}
+\end{figure}
+
+
+Для просмотра логической схемы работы устройства воспользуемся RTL Viewer. В результате получаем:
+
+\begin{figure}[hhh!]
+	\begin{center}
+		\includegraphics[width=12cm]{img/RTL_Viewer}
+	\end{center}
+	\vspace{-5mm}\caption{Логическая схема устройства}
+\end{figure}
+
+
+Осуществим функциональное моделирование. Для этого создадим Vector Waveform File, определим значение входных сигналов. Запустим функциональное моделирование, получим:
+
+\begin{figure}[hhh!]
+	\begin{center}
+		\includegraphics[width=12cm]{img/waveform}
+	\end{center}
+	\vspace{-5mm}\caption{Векторная диаграмма}
+\end{figure}
+
+
+\chapter{Выводы}
+
+В ходе выполнения лаобораторной работы было спроектировано устройство на языке Verilog HDL, осуществлено функциональное моделировние для проверки правильности работы и проверка работы устройстройства на плате.
+
+
+\end{document}
